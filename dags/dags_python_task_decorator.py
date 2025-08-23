@@ -5,7 +5,7 @@ import pendulum
 with DAG(
     dag_id="dags_python_task_decorator",
     schedule="0 2 * * 1",
-    start_date=pendulum.datetime(2025,8,23, tz="Asia/Seoul")
+    start_date=pendulum.datetime(2025, 8, 23, tz="Asia/Seoul")
     catchup=False
 ) as dag:
 
