@@ -26,7 +26,7 @@ with DAG(
     insrt_postgres = PythonOperator(
         task_id='insrt_postgres',
         python_callable=insrt_postgres,
-        op_args=['172.28.0.3','5431','ghham','ghham','ghham']
+        op_args=['127.0.0.1','5431','airflow','airflow','airflow']
     )
 
     insrt_postgres
